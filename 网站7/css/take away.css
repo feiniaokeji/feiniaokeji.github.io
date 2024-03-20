@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3d7aa;
+}
+
+header {
+    background-image: url(../images/03.jpg);
+    color: #0c0c0c;
+    padding: 1.75rem;
+    text-align: center;
+    font-size: 1.25rem;
+
+}
+
+nav {z-index: 1000;
+    position: fixed; 
+    background-color:#f3d7aa;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #060606;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu-item {
+    width: 23%; /* 每行显示四张照片，设置宽度为 23% */
+    margin-bottom: 20px;
+    position: relative; /* 保持图片容器的相对定位 */
+    text-align: center;
+    height: 300px;
+}
+.menu-item img {
+    width: 100%; /* 图片宽度占满容器 */
+    height: 100%; 
+    object-fit: cover;/* 图片高度自适应 */
+}
+.menu-item .description {
+    position: absolute; /* 将介绍文字绝对定位 */
+    bottom: 0; /* 定位在图片底部 */
+    left: 0; /* 定位在图片左侧 */
+    width: 100%; /* 宽度占满图片容器 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景色 */
+    color: #fff; /* 白色文字 */
+    padding: 5px; /* 内边距 */
+    box-sizing: border-box; /* 边框盒模型为 border-box */
+    font-size: 14px;}
+    @media screen and (max-width: 48rem){
+        .menu-item{
+            width: 100%;
+
+        }
+    }
+
+    
+footer {
+    background-color:white;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:rgb(249, 241, 231);
+    color: #0d0d0d;
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+nav {
+    background-color: #444;
+    color: #0a0a0a;
+    padding:0.625rem;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: .625rem 1.25rem;
+    margin: 0 0.625rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:1.25rem;
+}
+.box {
+    width: 45%;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    background-color:rgb(249, 241, 231);
+    text-align: center;
+}
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+.box p {
+    margin-top: 0.625rem;
+}
+@media  screen and (orientation: portrait ) and (max-width:720px){ 
+    .box{
+        width: 100%;
+    }
+} 
