@@ -34,7 +34,7 @@ nav a:hover {
     background-image: url(../images/22.webp);
     background-size: cover;
     background-position: center;
-    height: 63.75rem;
+    height: auto;
      width: 100%;
      color: rgb(143, 96, 9);
      font-size: 1.35rem;
