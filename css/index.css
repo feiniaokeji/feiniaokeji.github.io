@@ -60,6 +60,10 @@ h2 {text-align: center;
     color: white;
     font-size: 2.5625rem;
 }
+h3 {
+    color: white;
+    font-size: 2rem;
+}
 p {
     margin-bottom: .625rem;
 }
@@ -88,10 +92,11 @@ p {
     }
     .gallery img {
         width: 100%;
-        
-
     }
-  
+   body{
+    padding: 0;
+    margin: 0;
+} 
     
 }
 .gallery p{
