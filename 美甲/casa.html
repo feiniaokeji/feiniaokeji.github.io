@@ -1,41 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>美甲美容院</title>
     <style>
         /* 样式可以根据需要自行调整 */
-        body {background-color:#dbababfd ;
+        body {
+            background-color: #dbababfd;
+            width: 98%;
 
         }
+
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
+            padding: .625rem 1.25rem;
             background-color: #dbababfd;
             font-size: 1.25rem;
             color: #5b4646;
-         
+
         }
-        
+
         #logo {
-           
-           height: 8.125rem;
-           width:100%;
-           
+
+            height: 7.125rem;
+            width: 80%;
+
         }
-        
-        
+
+
         nav {
             background-color: #524a4a;
-           
-            padding: 10px 20px;
-            
+
+            padding: .625rem 1.25rem;
+            width: 98%;
+
         }
-        
+
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -44,163 +48,208 @@
             align-items: center;
             justify-content: center;
 
-           
-        }
-        
-        nav ul a {
-            margin-right: 20px;
-            color: rgb(206, 150, 150);
-            
+
         }
 
-        h2{
+        nav ul a {
+            margin-right: 1.25rem;
+            color: rgb(206, 150, 150);
+
+        }
+
+        h2 {
             text-align: center;
         }
+
         .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-           
+            margin: 1.25rem;
         }
-        
+
         .box {
             width: 30%;
-            padding: 30px;
+            padding: 1.5rem;
             text-align: center;
         }
-        
+
         .box img {
             width: 100%;
-            max-width: 300px;
+            max-width: 18.75rem;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: .625rem;
         }
-        
+
         .container2 {
             display: flex;
             justify-content: center;
             align-items: center;
-           
+
         }
-        
+
         .box2 {
             width: 100%;
-            padding: 30px;
+            padding: 1.875rem;
             text-align: center;
         }
-    
+
         .box img {
             width: 100%;
-            max-width: 300px;
+            max-width: 18.75rem;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: .625rem;
         }
-        
+
         footer {
-    background-color:  #524a4a;
-    color: rgb(206, 150, 150);
-    text-align: center;
-    padding: 0.25rem 0;
-    /* position: fixed; */
-    width: 100%;
-    bottom: 0;
-    line-height: 0.3rem;
-  }
+            background-color: #524a4a;
+            color: rgb(206, 150, 150);
+            text-align: center;
+            padding: 1.25rem 0;
+            margin: 0 0;
+            width: 98%;
+            bottom: 0;
+            line-height: 0.3rem;
+        }
+
         .slideshow-container {
-            max-width: 1000px;
+            width: 100%;
             position: relative;
             margin: auto;
             overflow: hidden;
             color: #5b4646;
         }
-        
+
         .slideshow-container img {
             width: 100%;
             height: auto;
             display: none;
         }
+
+        @media screen and (orientation:portrait) and (max-width: 768px) {
+
+            .container {
+                flex-direction: column;
+
+
+            }
+
+            .box {
+                width: 95%;
+                height: 8.3125rem;
+                margin: 2.0rem;
+            }
+
+            .box p {
+                display: flex;
+               margin: 0;
+               justify-content: center;
+            align-items: center;
+
+
+            }
+
+            .box2 img {
+                width: 60%;
+            }
+
+            nav {
+
+                width: 88%;
+
+            }
+
+            .slideshow-container {
+                width: 92%;
+            }
+
+        }
     </style>
 </head>
+
 <body>
 
-<header>
-    <div > <img src="./image/1.jpg" alt="logo" id="logo">
-       <br> <span>-LILY NAILS-</span>
-    </div>
-    <div>
-      
-        <span>TEL：966 222 333</span>
-    </div>
-</header>
+    <header>
+        <div> <img src="./image/1.jpg" alt="logo" id="logo">
+            <br> <span>-LILY NAILS-</span>
+        </div>
+        <div>
 
-<nav>
-    <ul>
-        <a href="../../index.html">飞鸟</a>
-        <a href="./casa.html">HOME</a>
-        <a href="./reserve.html">RESERVE</a>
-    </ul>
-</nav>
+            <span>TEL：966 222 333</span>
+        </div>
+    </header>
 
-<div class="slideshow-container">
-    <img src="./image/2.webp" alt="店铺照片" class="slide">
-    <img src="./image/3.webp" alt="店铺照片" class="slide">
-    <span>"Welcome to 'Glamourous Nails'!<br> 
-        Our boutique nail salon is dedicated to providing you with top-notch nail care and stunning designs that reflect your unique style.<br> 
-        Step into our chic and inviting space, <br>where our talented nail technicians will pamper you with luxurious manicures, pedicures, 
-        <br>and nail art services. Whether you're looking for a classic French manicure,
-        <br> trendy nail extensions, or intricate nail designs, 
-        <br>we have you covered. Sit back, relax, and let us help you achieve the glamorous nails you've always dreamed of. 
-        <br>Book your appointment today and experience the ultimate nail salon experience at Glamourous Nails!"</span>
-</div>
+    <nav>
+        <ul>
+            <a href="../../index.html">飞鸟</a>
+            <a href="./casa.html">HOME</a>
+            <a href="./reserve.html">RESERVE</a>
+        </ul>
+    </nav>
 
-<h2>SERVE</h2>
-<div class="container">
-    <div class="box">
-        <img src="./image/6.jpg" alt="Photo 1">
-        <p>Manicure</p >
+    <div class="slideshow-container">
+        <img src="./image/2.webp" alt="店铺照片" class="slide">
+        <img src="./image/3.webp" alt="店铺照片" class="slide">
+        <span>"Welcome to 'Glamourous Nails'!<br>
+            Our boutique nail salon is dedicated to providing you with top-notch nail care and stunning designs that
+            reflect your unique style.<br>
+            Step into our chic and inviting space, <br>where our talented nail technicians will pamper you with
+            luxurious manicures, pedicures,
+            <br>and nail art services. Whether you're looking for a classic French manicure,
+            <br> trendy nail extensions, or intricate nail designs,
+            <br>we have you covered. Sit back, relax, and let us help you achieve the glamorous nails you've always
+            dreamed of.
+            <br>Book your appointment today and experience the ultimate nail salon experience at Glamourous
+            Nails!"</span>
     </div>
-    <div class="box">
-        <img src="./image/260.webp" alt="Photo 2">
-        <p>Eyelash Extensions</p >
-    </div>
-    <div class="box">
-        <img src="./image/VCG41N1147811612.jpg" alt="Photo 3">
-        <p>Makeup</p >
-    </div>
-</div>
-<div class="container2">
-    
 
-    <div class="box2">
-        <img src="./image/8.jpg" alt="Photo 2">
-        <p>WHATAPP</p >
+    <h2>SERVE</h2>
+    <div class="container">
+        <div class="box">
+            <img src="./image/6.jpg" alt="Photo 1">
+            <p>Manicure</p>
+        </div>
+        <div class="box">
+            <img src="./image/260.webp" alt="Photo 2">
+            <p>Eyelash Extensions</p>
+        </div>
+        <div class="box">
+            <img src="./image/VCG41N1147811612.jpg" alt="Photo 3">
+            <p>Makeup</p>
+        </div>
+    </div>
+    <div class="container2">
+
+
+        <div class="box2">
+            <img src="./image/8.jpg" alt="Photo 2">
+            <p>WHATAPP</p>
             <p>RUA JOAO XXL n158 LONDON
                 <br>966 222 333
+        </div>
     </div>
-</div>
-<footer>
-    <p>Address: 123 Main St, City</p >
-    <p>Hours: Mon-Fri 9am-9pm, Sat-Sun 10am-8pm</p >
-    <p>© 2024 My Website. All rights reserved.</p >
-  </footer>
-<script>
-    var slideIndex = 0;
-    carousel();
+    <footer>
+        <p>Address: 123 Main St, City</p>
+        <p>Hours: Mon-Fri 9am-9pm, Sat-Sun 10am-8pm</p>
+        <p>© 2024 My Website. All rights reserved.</p>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        carousel();
 
-    function carousel() {
-        var i;
-        var slides = document.getElementsByClassName("slide");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        function carousel() {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-</script>
+    </script>
 
 </body>
+
 </html>
-
-
